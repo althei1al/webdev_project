@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Works</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+    body {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      background: linear-gradient(to bottom, white, #d14545);
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+
+    header h1 {
+      font-family: "Jersey 20", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      padding: 20px;
+    }
+
+    header img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 60px;
+      cursor: pointer;
+    }
+
+    .text-box {
+      max-width: 500px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .text-box h2 {
+      font-family: "Jersey 20", sans-serif;
+      font-size: 80px;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+
+    h2 {
+      font-family: "Jersey 20", sans-serif;
+      font-size: 60px;
+      margin-top: 100px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 10px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      border: 0;
+      border-radius: 0;
+      margin: 15px 10vw 30px 10vw;
+      animation: sectionFade 0.5s ease-in-out forwards;
+    }
+
+    @keyframes sectionFade {
+      0% {
+        transform: translateY(1%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .footer {
+      background: #4b2f2f;
+      margin-top: 50px;
+      padding: 3px 0;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 30px;
+      background: #4b2f2f;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 180px;
+        height: auto;
+      }
+
+      .text-box h2,
+      h2 {
+        font-size: 40px;
+      }
+
+      .gallery {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 8px 18px;
+      }
+
+      section {
+        margin: 20px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img src="homepage.png" alt="Homepage Button" />
+    </a>
+  </header>
+
+  <section id="portart">
+    <h2>Art Works</h2>
+    <div class="gallery">
+      <figure>
+        <img src="artwork1.gif" width="300" alt="Pixel Art 1" />
+      </figure>
+      <figure>
+        <img src="artwork2.png" width="300" alt="Pixel Art 2" />
+      </figure>
+    </div>
+  </section>
+
+  <div class="footer">
+    <nav class="buttons">
+      <a href="portfolio.html" class="btn">PORTFOLIO</a>
+      <a href="about.html" class="btn">ABOUT</a>
+      <a href="contacts.html" class="btn">CONTACTS</a>
+    </nav>
+  </div>
+</body>
+</html>

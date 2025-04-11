@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, white, #d14545);
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 10px 0 10px;
+            font-family: 'Jersey 20', sans-serif;
+            font-size: 24px;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .intro img {
+            width: 400px;
+            height: auto;
+            border-radius: 0px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .text-box {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .text-box h2 {
+            font-family: "Jersey 20", sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+
+        .text-box p {
+            font-size: 22px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background: #4b2f2f;
+            margin: 0;
+            margin-top: 50px;
+            padding: 3px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 30px;
+            background: #4b2f2f;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+            scale: 1.1;
+        }
+
+        section {
+            border: 0px solid;
+            border-radius: 0px;
+            margin: 15px 100px 30px 100px;
+            animation: sectionFade 0.5s ease-in-out forwards;
+        }
+
+        @keyframes sectionFade {
+            0% {
+                transform: translateY(1%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    .intro {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro img {
+        width: 75%;
+        border-radius: 0px;
+        margin: 20px 0;
+    }
+
+    .text-box {
+        text-align: center;
+    }
+
+    .text-box h2 {
+        font-family: "Jersey 20", sans-serif;
+        font-size: 48px;
+        margin: 10px 0;
+    }
+
+    .text-box p {
+        font-size: 16px;
+        padding: 0 15px;
+        line-height: 1.6;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 25px;
+        background: #4b2f2f;
+        color: white;
+    }
+
+    section {
+        margin: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo (2).png" alt="Logo">
+        </a>
+    </header>
+
+    <section class="intro">
+        <img src="picture.jpg" alt="Althea Jaballa">
+        <div class="text-box">
+            <h2>Hello,<br>I'm Althea!</h2>
+            <p>
+                I’m an aspiring IT student currently exploring the field of technology, and also learning digital art. 
+                This portfolio is a step toward showcasing my learning journey, skills, and growth as I gain more experience.
+            </p>
+        </div>
+    </section>
+
+    <div class="footer">
+        <nav class="buttons">
+            <a href="portfolio.html" class="btn">PORTFOLIO</a>
+            <a href="about.html" class="btn">ABOUT</a>
+            <a href="contacts.html" class="btn">CONTACTS</a>
+        </nav>
+    </div>
+</body>
+</html>
